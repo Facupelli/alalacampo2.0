@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section class="relative">
+  <div
+    class="absolute top-0 left-0 w-full h-dvh bg-[radial-gradient(transparent,black)] opacity-50"
+  >
+  </div>
+  <!-- <div class="absolute top-0 left-0 w-full h-dvh bg-black opacity-30"></div> -->
+  <Image
+    src="/images/drone-complejo-1.jpg"
+    alt="Vista de drone del campo 'Alala Campo'"
+    width={1000}
+    height={1000}
+    class="object-cover w-full h-dvh"
+  />
+
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <h1
+      class="font-bold font-serif text-[#FFF] text-[2.25rem] lg:text-[4.8rem] leading-[100%] text-balance lg:text-pretty text-center"
+    >
+      BIENVENIDOS A ALALA CAMPO
+    </h1>
+
+    <div
+      class="flex items-center gap-4 text-nowrap lg:gap-6 justify-center pt-8 text-[#fff] text-[.875rem] lg:text-[1.125rem] font-medium"
+    >
+      <p>17:05</p>
+      <div class="w-[1px] h-[25px] bg-[#fff]"></div>
+      <p>31 °C</p>
+      <div class="w-[1px] h-[25px] bg-[#fff]"></div>
+      <p>Mayormente soleado</p>
+    </div>
+  </div>
+</section>

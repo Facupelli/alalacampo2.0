@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+---
+
+<nav
+  class="absolute z-10 top-0 left-0 w-full flex justify-between px-6 pt-6 lg:px-20 lg:pt-10 pb-5 bg-transparent"
+>
+  <ul class="hidden lg:flex">
+    <li class="px-6 py-3.5 leading-[133%] text-base font-medium text-[#FFF]">
+      Casas
+    </li>
+    <li class="px-6 py-3.5 leading-[133%] text-base font-medium text-[#FFF]">
+      Servicios
+    </li>
+  </ul>
+
+  <Image
+    src="/logo.png"
+    alt="alala campo logo"
+    width={150}
+    height={100}
+    class="object-contain"
+  />
+
+  <ul class="hidden lg:flex">
+    <li class="px-6 py-3.5 leading-[133%] text-base font-medium text-[#FFF]">
+      Ubicación
+    </li>
+    <li class="px-6 py-3.5 leading-[133%] text-base font-medium text-[#FFF]">
+      Contacto
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section class="max-w-6xl lg:px-0 px-4 m-auto py-32 grid grid-cols-2 gap-10">
+  <Image
+    src="/images/introV.jpeg"
+    alt="intro picture"
+    width={400}
+    height={600}
+    class="w-full h-full col-span-2 lg:col-span-1"
+  />
+
+  <div class="col-span-2 lg:col-span-1">
+    <h1
+      class="font-serif text-[3.5rem] pb-12 text-balance leading-[100%] lg:leading-[120%]"
+    >
+      Las 3 casas cuentan con:
+    </h1>
+
+    <ul class="text-[1.125rem] flex flex-wrap gap-4 lg:gap-6">
+      <li class="bg-white w-fit p-3 rounded-md shadow">Pileta</li>
+      <li class="bg-white w-fit p-3 rounded-md shadow">Wifi</li>
+      <li class="bg-white w-fit p-3 rounded-md shadow">Parrilla</li>
+
+      <li class="bg-white w-fit p-3 rounded-md shadow">Aire acondicionado</li>
+      <li class="bg-white w-fit p-3 rounded-md shadow">Alarma</li>
+      <li class="bg-white w-fit p-3 rounded-md shadow">Cochera</li>
+
+      <li class="bg-white w-fit p-3 rounded-md shadow">Parquizado</li>
+      <li class="bg-white w-fit p-3 rounded-md shadow">Cocina equipada</li>
+      <li class="bg-white w-fit p-3 rounded-md shadow">TV cable</li>
+    </ul>
+  </div>
+</section>
